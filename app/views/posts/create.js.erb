@@ -1,0 +1,6 @@
+$("#mynewpost").modal('hide');
+$(".post_title").val('');
+$(".post_context").val('');
+
+$("#container_posts").append('<%= j render (@post) %>');
+$("#post_<%=@post.id %>").hide().fadeIn(1000);
